@@ -10,7 +10,9 @@ _laststableversion_ = '17.07.07'
 
 def binning(data, vTime, vMag, vMage, binsize, *vfilename):
     """
-    Takes the time series data and bins it with a given binsize.
+    This code bins a time series data given in the form of a pandas dataframe. 
+    The reason to bin the time series data is to reduce the noise by averaging all data points in a given time bin.
+    The pandas dataframe has to contain the column names at the top of the file.
     :param data (pd.DataFrame): pandas DataFrame which contains the time series.
     :param vTime (str): name of the time variable in the dataframe
     :param vMag (str): name of the magnitude variable in the dataframe.
