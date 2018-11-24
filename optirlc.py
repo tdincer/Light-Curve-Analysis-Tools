@@ -8,7 +8,7 @@ _version_ = '17.07.07'
 _laststableversion_ = '17.07.07'
 
 
-def binning(data, vTime, vMag, vMage, binsize, *vfilename):
+def binlc(data, vTime, vMag, vMage, binsize, *vfilename):
     """
     This code bins a time series data given in the form of a pandas dataframe. 
     The reason to bin the time series data is to reduce the noise by averaging all data points in a given time bin.
